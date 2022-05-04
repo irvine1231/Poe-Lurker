@@ -10,7 +10,7 @@ namespace Lurker.Events
     {
         #region Fields
 
-        private static readonly string TradeAcceptedMarker = "Trade accepted";
+        private static readonly string TradeAcceptedMarker = "完成交易";
 
         #endregion
 

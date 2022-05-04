@@ -12,8 +12,8 @@ namespace Lurker.Events
     {
         #region Fields
 
-        private static readonly string WhisperFromMarker = "@From";
-        private static readonly string WhisperToMarker = "@To";
+        private static readonly string WhisperFromMarker = "@來自";
+        private static readonly string WhisperToMarker = "@向";
 
         #endregion
 

@@ -10,7 +10,7 @@ namespace Lurker.Events
     {
         #region Fields
 
-        private static readonly string JoinTheAreaMarker = "has joined the area";
+        private static readonly string JoinTheAreaMarker = "進入了此區域";
 
         #endregion
 

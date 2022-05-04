@@ -10,7 +10,7 @@ namespace Lurker.Events
     {
         #region Fields
 
-        private static readonly string LocationMarker = "You have entered";
+        private static readonly string LocationMarker = "你已進入";
 
         #endregion
 
