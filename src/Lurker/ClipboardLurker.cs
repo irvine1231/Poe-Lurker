@@ -8,8 +8,8 @@ namespace Lurker
 {
     using System;
     using System.Windows.Input;
+    using Lurker.Events;
     using Lurker.Helpers;
-    using Lurker.Patreon.Events;
     using WK.Libraries.SharpClipboardNS;
 
     /// <summary>

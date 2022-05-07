@@ -7,8 +7,8 @@
 namespace Lurker.Helpers
 {
     using System.Text.RegularExpressions;
+    using Lurker.Events;
     using Lurker.Models;
-    using Lurker.Patreon.Events;
 
     /// <summary>
     /// Represents token helper.

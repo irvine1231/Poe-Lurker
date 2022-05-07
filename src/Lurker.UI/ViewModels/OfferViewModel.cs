@@ -11,8 +11,8 @@ namespace Lurker.UI.ViewModels
     using System.Threading.Tasks;
     using System.Windows.Input;
     using Caliburn.Micro;
+    using Lurker.Events;
     using Lurker.Helpers;
-    using Lurker.Patreon.Events;
     using Lurker.Patreon.Models;
     using Lurker.Services;
     using Lurker.UI.Models;

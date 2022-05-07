@@ -12,9 +12,9 @@ namespace Lurker.UI.ViewModels
     using System.Linq;
     using System.Threading.Tasks;
     using Caliburn.Micro;
+    using Lurker.Events;
     using Lurker.Helpers;
     using Lurker.Models;
-    using Lurker.Patreon.Events;
     using Lurker.Patreon.Models;
     using Lurker.Patreon.Parsers;
     using Lurker.Patreon.Services;

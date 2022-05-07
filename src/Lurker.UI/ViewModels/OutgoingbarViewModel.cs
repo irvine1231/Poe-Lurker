@@ -12,9 +12,9 @@ namespace Lurker.UI.ViewModels
     using System.Threading.Tasks;
     using System.Timers;
     using Caliburn.Micro;
+    using Lurker.Events;
     using Lurker.Helpers;
     using Lurker.Models;
-    using Lurker.Patreon.Events;
     using Lurker.Patreon.Services;
     using Lurker.Services;
     using Lurker.UI.Models;
@@ -217,7 +217,7 @@ namespace Lurker.UI.ViewModels
         /// </summary>
         /// <param name="sender">The sender.</param>
         /// <param name="e">The e.</param>
-        private void Lurker_OutgoingOffer(object sender, Patreon.Events.OutgoingTradeEvent e)
+        private void Lurker_OutgoingOffer(object sender, OutgoingTradeEvent e)
         {
             if (this.Offers.Any(o => o.Event.Equals(e)))
             {
@@ -248,7 +248,7 @@ namespace Lurker.UI.ViewModels
         /// </summary>
         /// <param name="sender">The sender.</param>
         /// <param name="e">The e.</param>
-        private async void Lurker_TradeAccepted(object sender, Patreon.Events.TradeAcceptedEvent e)
+        private async void Lurker_TradeAccepted(object sender, TradeAcceptedEvent e)
         {
             if (this._activeOffer == null)
             {

@@ -6,8 +6,8 @@
 
 namespace Lurker.Test.Events
 {
-    using Lurker.Patreon.Events;
-    using Lurker.Patreon.Models;
+    using Lurker.Events;
+    using Patreon.Models;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Moq;
 

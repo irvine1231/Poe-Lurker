@@ -11,8 +11,8 @@ namespace Lurker.Services
     using System.IO;
     using System.Linq;
     using ConfOxide;
+    using Lurker.Events;
     using Lurker.Models;
-    using Lurker.Patreon.Events;
 
     /// <summary>
     /// Represent the player Service.

@@ -14,8 +14,8 @@ namespace Lurker
     using System.Text;
     using System.Threading;
     using System.Threading.Tasks;
+    using Lurker.Events;
     using Lurker.Extensions;
-    using Lurker.Patreon.Events;
     using Sentry;
 
     /// <summary>
@@ -339,7 +339,10 @@ namespace Lurker
             try
             {
                 // TradeEvent need to be parse before whisper
+                Console.WriteLine(newline);
                 var tradeEvent = TradeEvent.TryParse(newline);
+                Console.WriteLine("ABC");
+                Console.WriteLine(tradeEvent);
                 if (tradeEvent != null)
                 {
                     this.HandleLeague(tradeEvent);

@@ -7,7 +7,7 @@
 namespace Lurker.UI.ViewModels
 {
     using System.Windows.Media;
-    using Lurker.Patreon.Events;
+    using Lurker.Events;
     using Lurker.Patreon.Models;
     using Lurker.Services;
 

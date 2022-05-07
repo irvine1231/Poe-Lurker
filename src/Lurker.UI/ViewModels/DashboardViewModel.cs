@@ -10,7 +10,7 @@ namespace Lurker.UI.ViewModels
     using System.Collections.Generic;
     using System.Linq;
     using Caliburn.Micro;
-    using Lurker.Patreon.Events;
+    using Lurker.Events;
     using Lurker.Patreon.Services;
     using Lurker.UI.Models;
     using Patreon = Lurker.Patreon.Models;
@@ -28,9 +28,9 @@ namespace Lurker.UI.ViewModels
         private LineChartViewModel _networthChart;
         private ChartViewModelBase _activeChart;
         private PieChartViewModel _itemClassChart;
-        private IEnumerable<SimpleTradeModel> _networthTrades;
-        private IEnumerable<SimpleTradeModel> _leagueTrades;
-        private IEnumerable<SimpleTradeModel> _allTradres;
+        private IEnumerable<Lurker.Patreon.Events.SimpleTradeModel> _networthTrades;
+        private IEnumerable<Lurker.Patreon.Events.SimpleTradeModel> _leagueTrades;
+        private IEnumerable<Lurker.Patreon.Events.SimpleTradeModel> _allTradres;
         private IEnumerable<League> _leagues;
         private League _selectedLeague;
         private uint _totalNetworth;
@@ -48,9 +48,9 @@ namespace Lurker.UI.ViewModels
         {
             this.DisplayName = "Dashboard";
 
-            this._networthTrades = Enumerable.Empty<SimpleTradeModel>();
-            this._leagueTrades = Enumerable.Empty<SimpleTradeModel>();
-            this._allTradres = Enumerable.Empty<SimpleTradeModel>();
+            this._networthTrades = Enumerable.Empty<Lurker.Patreon.Events.SimpleTradeModel>();
+            this._leagueTrades = Enumerable.Empty<Lurker.Patreon.Events.SimpleTradeModel>();
+            this._allTradres = Enumerable.Empty<Lurker.Patreon.Events.SimpleTradeModel>();
             this._leagues = Enumerable.Empty<League>();
         }
 

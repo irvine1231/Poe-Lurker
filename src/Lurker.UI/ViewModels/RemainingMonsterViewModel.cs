@@ -6,7 +6,7 @@
 
 namespace Lurker.UI.ViewModels
 {
-    using Lurker.Patreon.Events;
+    using Lurker.Events;
 
     /// <summary>
     /// Represents the remaining monster.
